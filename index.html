@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Soham</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+<body>
+    <nav id="navbar">
+        <div id="navbaroutter"><div id="navbarinner">
+            
+            <ul>
+                <li class="item"><a href="#home">Home</a></li>
+                <li class="item"><a href="#about">About Me</a></li>
+                <li class="item"><a href="#skills">Skills</a></li>
+                <li class="item"><a href="#contact">My Projects</a></li>
+                <li class="item"><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div></div>
+        <div id="searchoutter">
+            <div id="search">
+                <i class="fa fa-linkedin-square" style="font-size:28px;color:white;margin:5px;cursor:pointer;"></i>
+                <i class="fa fa-github-square" style="font-size:28px;color:white;margin:5px;cursor:pointer;"></i>
+            </div>
+        </div>
+    </nav>
+    <div id="box">
+        <div id="intro">
+            <p id="hi">
+                Hi,
+            </p>
+            <br>
+            <p id="iam">
+                I am
+            </p>
+            <br>
+            <p id="name">
+                S<span style="color: #00adf2;">o</span>h<span style="color: #00adf2;">a</span>m Ch<span style="color: #00adf2;">a</span>udh<span style="color: #00adf2;">u</span>ri <div class="dot-flashing"></div>
+            </p>
+            <p id="desc">
+                Full Stack developer <span style="color: #00adf2;">|</span> Competitive Coder
+            </p>
+            <p id="desc2">
+                AI-Ml <span style="color: #00adf2;">|</span> Block Chain enthusiast
+            </p>
+            <br>
+        </div>
+        </div>
+        <div id="heading"><h1>About Me<span>_</span></h1></div>
+          <section>
+            <div class="container reveal">
+              <div class="text-container">
+                <h2><span style="color: #00adf2;text-decoration:underline;">Me, Myself</span> and <span style="color: #00adf2;text-decoration:underline;">I</span></h2>
+                <div class="text-box">
+                    <p>
+                        I am currently undergrad student in Electrical Engineering at Jadavpur University. I was able to secure a WBJEE rank of 682 in 2021, Scored 98.75% and 95.6% in my 12th and 10th grade respectively. 
+                    </p>
+                  <p>
+                    Since I was introduced to Competitive Programming I have been passionate about it.
+                  </p>
+                  <p>
+                    Then I started frontend and backend web development and I am absolutely fond of it. I am also interested in artificial intelligence and machine learning using python.
+                  </p>
+                  <p>
+                    Recently I am learning block chain development on ethereum and react.js.....
+                  </p>
+                </div>
+              </div>
+              <div class="text-container">
+                <h2><span style="color: #00adf2;text-decoration:underline;">Familiar</span> with: </h2>
+                <div class="text-box">
+                    <Button class="btn">C</Button><Button class="btn">C++</Button><Button class="btn">Java</Button><Button class="btn">Python</Button><Button class="btn">Html</Button><Button class="btn">Css</Button><Button class="btn">JavaScript</Button><Button class="btn">React.js</Button>
+                    <Button class="btn">Solidity</Button><Button class="btn">Django</Button>
+                    <Button class="btn">Git</Button><Button class="btn">GitHub</Button>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <div id="skills">
+            <div id="skills-menu">
+              <h1>My Skills_</h1>
+              <ul id="skills-menu-ul">
+                <li class="skills-menu-li"><a href="">Competitive Programming</a></li>
+                <li class="skills-menu-li"><a href="">Web-Dev</a></li>
+                <li class="skills-menu-li"><a href="">ML-Block Chain</a></li>
+              </ul>
+            </div>
+          </div>
+          
+    
+    
+    
+</body>
+<script>
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+      
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);
+
+      
+</script>
+</html>
