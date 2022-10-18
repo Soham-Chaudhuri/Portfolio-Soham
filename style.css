@@ -378,3 +378,39 @@ section .text-container .text-box{
   transform: translateY(-10px);
   letter-spacing: 0.1rem;
 }
+
+/* body {
+  margin: 20px;
+  font-size:5rem;
+  background:black;
+  color:white;
+}
+.blast{
+  letter-spacing: 5px;
+  margin:auto;
+  padding:auto;
+  font-weight:800;
+  color:yellow;
+  line-height:0.5;
+}
+.blast:hover{
+  animation: blamst 1s;
+  animation-timing-function:easy-in-out;
+}
+@keyframes blamst{
+  0%{
+    font-size:4.75rem;
+    letter-spacing: 5px;
+    font-weight:800;
+  }
+  25%{
+    font-size:7.5rem;
+    letter-spacing:-15px;
+    font-weight:600;
+  }
+  100%{
+    font-size:5rem;
+    letter-spacing: 5px;
+    font-weight:800;
+  }
+} */
