@@ -3,14 +3,16 @@
     padding: 0;
   }
   body{
-    background-color: black;
+    background-image: url(dark-night-mountains-minimalist-4k-o4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
   #navbar{
     padding: 20px;
     box-shadow: 0 0 8px grey;
     display: flex;
     border-color: #222930;
-    background-color: #252525;
+    background-color: black;
     position: sticky;
     top: 0px;
     z-index: 100;
@@ -78,9 +80,9 @@
     color: white;
     font-family: 'Inconsolata', monospace;
     font-weight: 800;
-    font-size: 5.3rem;
+    font-size: 5rem;
   }
-  #iam{
+  #iam{ 
     color: #00adf2;
   }
   #hi {
@@ -224,22 +226,25 @@ section .container{
   border-radius: 15px;
   
   display: flex;
+}
+.distribute{
   justify-content: space-between;
 }
 #heading{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
   margin-top: 110px;
   margin-bottom: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   padding: 20px;
   color: white;
   z-index: 10;
-  animation: appear 15s;
+  animation: appear 15s; */
 }
-#heading span{
+.cursor{
+  font-size: 5rem;
+  color: white;
   animation: cursor 0.5s infinite;
 }
 @keyframes cursor {
@@ -274,16 +279,15 @@ section h2{
 section .text-container{
    display: flex;
    box-shadow: 0 0 8px white;
-   flex-direction: column;
    margin: 55px;
-   background-color: #252525;
+   background-color: black;
    /* border-radius: 15px; */
    min-width: 40vw;
 }
 section .text-container .text-box{
   margin: 0 20px 20px 20px;
   padding: 0 20px 20px 20px;
-  background: #252525;
+  background: black;
   border-radius: 15px;
   border: #00adf2;
 }
@@ -311,7 +315,7 @@ section .text-container .text-box{
   margin: 10px;
   padding: 0 15px;
   border-color: transparent;
-  background: linear-gradient(-135deg, #00adf2 50%, #252525 50%);
+  background: linear-gradient(-135deg, #00adf2 50%, black 50%);
   background-size: 200% 200%;
   background-position: bottom left;
   transition: all .7s ease-out;
@@ -321,13 +325,13 @@ section .text-container .text-box{
 }
 .btn:hover{
   background-position: top right;
-  color: #252525;
+  color: black;
   cursor: pointer;
   box-shadow: 0 0 15px #00adf2;
   border: 1px solid #00adf2;
 }
 
-#skills{
+/* #skills{
   background-color: white;
 }
 
@@ -348,7 +352,7 @@ section .text-container .text-box{
 #skills-menu-ul{
   list-style: none;
   display: flex;
-  /* margin: auto; */
+  margin: auto;
   justify-content: space-evenly;
 }
 .skills-menu-li{
@@ -377,40 +381,84 @@ section .text-container .text-box{
   text-decoration: none;
   transform: translateY(-10px);
   letter-spacing: 0.1rem;
-}
+} */
 
-/* body {
-  margin: 20px;
-  font-size:5rem;
-  background:black;
-  color:white;
-}
 .blast{
-  letter-spacing: 5px;
-  margin:auto;
-  padding:auto;
+  letter-spacing: 0.5px;
+  margin:15px 0;
+  padding:0px;
   font-weight:800;
-  color:yellow;
-  line-height:0.5;
+  color:white;
+  line-height:-15px;
+  font-size:5rem;
 }
 .blast:hover{
-  animation: blamst 1s;
+  animation: blamst 2s;
   animation-timing-function:easy-in-out;
 }
 @keyframes blamst{
   0%{
     font-size:4.75rem;
-    letter-spacing: 5px;
+    letter-spacing: 0.5px;
     font-weight:800;
+    line-height: -15px;
   }
   25%{
-    font-size:7.5rem;
+    font-size:5.25rem;
     letter-spacing:-15px;
     font-weight:600;
+    line-height: normal;
+    color: #00adf2;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    z-index: 2;
   }
   100%{
     font-size:5rem;
-    letter-spacing: 5px;
+    letter-spacing: 0.5px;
     font-weight:800;
+    line-height: -15px;
   }
-} */
+}
+#skills{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#skills h1{
+  margin: auto;
+  margin: 50px 0;
+  font-size: 5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 600;
+}
+#skills-menu{
+  display: flex;
+  justify-content: space-between;
+}
+#skills-menu-des,#skills-menu-bar{
+  max-width: 40vmin;
+}
+.skills-bar-container {
+  width: 100%;
+  background-color: #8d8484;
+}
+
+.skills-bar {
+  height: 5px;
+  color: white;
+  background-color: #e6ff01;
+}
+.c {width: 85%;}
+.java {width: 80%;}
+.python {width: 75%;}
+.html {width: 80%;}
+.css {width: 70%;}
+.js {width: 60%;}
+.sol {width: 40%;}
+
+#lr{
+  display: flex;
+}
