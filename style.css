@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
 * {
     margin: 0;
     padding: 0;
@@ -462,3 +463,121 @@ section .text-container .text-box{
 #lr{
   display: flex;
 }
+#projects{
+  color: white;
+}
+.projects{
+  display:flex;
+  justify-content:space-between;
+  }
+  
+  .card {
+    width: 400px;
+    margin: 30px;
+    padding: 5px;
+    /* overflow: hidden; */
+  }
+  
+  .card__content {
+    text-align: center;
+    position: relative;
+    padding: 15em 5em;
+    transition: transform 2s;
+    /* background: pink; */
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .card__content {
+    transform: perspective(800px) rotateY(.5turn);
+    cursor: pointer;
+  }
+  
+  .card__front__pic1,.card__front__pic2,.card__front__pic3,
+  .card__back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5em 3em;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    display: grid;
+    align-content: center;
+  }
+  
+  /* .card__front__pic1,.card__front__pic2,.card__front__pic3 {
+    background-color:#2759a9;
+    color: rgb(255, 255, 255);
+  } */
+  
+  .card__front__pic1::before,.card__front__pic2::before,.card__front__pic3::before {
+    content: '';
+    position: absolute;
+    --spacer: 1em;
+    top: var(--spacer);
+    bottom: var(--spacer);
+    left: var(--spacer);
+    right: var(--spacer);
+    border: 3px solid currentColor;
+    transform: translateZ(3rem);
+  }
+  
+  .card__title {
+    text-align: center;
+    font-size: 3rem;
+    transform: translateZ(9rem);
+    order: 2;
+    text-transform: uppercase;
+  }
+  
+  .card__subtitle {
+    transform: translateZ(6rem);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: .75rem;
+    font-weight: 700;
+    opacity: .7;
+  }
+  
+  .card__body {
+    transform: translateZ(6rem);
+    font-weight: (400);
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .card__back {
+    transform: perspective(800px) rotateY(.5turn);
+    color: #b7c9e5;
+    background: #252525;
+  }
+  .card__front__pic1{
+    background-image: url(Business\ candle\ stick\ graph\ chart\ of\ stock\ market\ investment\ trading____.jfif);
+    /* background-image: url(ethereum-1.jpeg); */
+    background-size: cover;
+    background-blend-mode: overlay;
+    /* background-position: 50% 0; */
+    background-color:#2759a9;
+    color: rgb(255, 255, 255);
+  }
+  .card__front__pic2{
+    /* background-image: url(Business\ candle\ stick\ graph\ chart\ of\ stock\ market\ investment\ trading____.jfif); */
+    background-image: url(ethereum-1.jpeg);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: 50% 0;
+    background-color:#2759a9;
+    color: rgb(255, 255, 255);
+  }
+  .card__front__pic3{
+    /* background-image: url(Business\ candle\ stick\ graph\ chart\ of\ stock\ market\ investment\ trading____.jfif); */
+    /* background-image: url(ethereum-1.jpeg); */
+    background-image: url(csm_deep-learning-vs-machine-learning-t_8d403d65ff.jpg);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: 50% 0;
+    background-color:#2759a9;
+    color: rgb(255, 255, 255);
+  }
