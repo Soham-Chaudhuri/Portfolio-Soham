@@ -29,9 +29,6 @@
   #navbarinner{
     display: flex;
   }
-  /* #searchoutter{
-    margin: auto;
-  } */
   #navbarinner ul{
     list-style: none;
     display: flex;
@@ -58,8 +55,7 @@
     margin: 20px;
     background: linear-gradient(90deg, #e6ff01, #00adf2 );
     padding: 20px;
-    /* animation: color-wheel 1.5s linear infinite; */
-    
+    border-radius: 5px;
   }
   @keyframes color-wheel {
     100%{
@@ -112,97 +108,6 @@
     from {transform: translateY(200px);opacity: 0;}
     to {transform: translateY(0px);opacity: 1;}
 }
-/* #span1{
-    -webkit-animation: appear1 1s infinite;
-    animation: appear1 1s infinite;
-}
-@keyframes appear1 {
-    from{opacity: 0;}
-    to{
-        opacity: 1;
-    }
-}
-#span2{
-    -webkit-animation: appear2 2s infinite;
-    animation: appear2 2s infinite;
-}
-@keyframes appear2 {
-    from{opacity: 0;}
-    to{
-        opacity: 1;
-    }
-}
-#span3{
-    -webkit-animation: appear3 3s infinite;
-    animation: appear3 3s infinite;
-}
-@keyframes appear3 {
-    from{opacity: 0;}
-    to{
-        opacity: 1;
-    }
-}
-#span4{
-    -webkit-animation: appear4 4s infinite;
-    animation: appear4 4s infinite;
-}
-@keyframes appear4 {
-    from{opacity: 0;}
-    to{
-        opacity: 1;
-    }
-} */
-.dot-flashing {
-  position: relative;
-  width: 10px;
-  height: 10px;
-  top: -45px;
-  left: 690px;
-  border-radius: 5px;
-  background-color: #9880ff;
-  color: #9880ff;
-  animation: appear 15s,dotFlashing 1s infinite linear alternate;
-  animation-delay: .5s;
-}
-
-.dot-flashing::before, .dot-flashing::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  top: 0;
-}
-
-.dot-flashing::before {
-  left: -15px;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  background-color: #9880ff;
-  color: #9880ff;
-  animation: dotFlashing 1s infinite alternate, appear 15s;
-  animation-delay: 0s;
-}
-
-.dot-flashing::after {
-  left: 15px;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  background-color: #9880ff;
-  color: #9880ff;
-  animation: dotFlashing 1s infinite alternate, appear 15s;
-  animation-delay: 1s;
-}
-
-@keyframes dotFlashing {
-  0% {
-    background-color: #9880ff;
-  }
-  50%,
-  100% {
-    background-color: #ebe6ff;
-  }
-}
 
 #desc,#desc2{
   font-family: 'Fuzzy Bubbles', cursive;
@@ -237,11 +142,6 @@ section .container{
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  padding: 20px;
-  color: white;
-  z-index: 10;
-  animation: appear 15s; */
 }
 .cursor{
   font-size: 5rem;
@@ -282,7 +182,7 @@ section .text-container{
    box-shadow: 0 0 8px white;
    margin: 0 20px 0px 20px;
    background-color: black;
-   /* border-radius: 15px; */
+   border-radius: 5px;
    min-width: 40vw;
 }
 section .text-container .text-box{
@@ -331,58 +231,6 @@ section .text-container .text-box{
   box-shadow: 0 0 15px #00adf2;
   border: 1px solid #00adf2;
 }
-
-/* #skills{
-  background-color: white;
-}
-
-#skills-menu{
-  border-radius: 10px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 18px rgb(60, 60, 60);
-  margin: auto;
-}
-#skills-menu h1{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  padding: 20px 0;
-}
-#skills-menu-ul{
-  list-style: none;
-  display: flex;
-  margin: auto;
-  justify-content: space-evenly;
-}
-.skills-menu-li{
-  min-width: 50vmin;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.skills-menu-li a{
-  margin: auto;
-  padding: 14px 50px;
-  font-weight: bolder;
-  color: black;
-  font-size: 20px;
-  cursor: pointer;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-decoration:none;
-  list-style: none;
-  background-color: #FF5733;
-  transition: 0.7s;
-}
-.skills-menu-li a:hover{
-  background-color: #39FF14;
-  color: #222930;
-  text-decoration: underline;
-  text-decoration: none;
-  transform: translateY(-10px);
-  letter-spacing: 0.1rem;
-} */
 
 .blast{
   letter-spacing: 0.5px;
@@ -476,7 +324,6 @@ section .text-container .text-box{
     width: 400px;
     margin: 30px;
     padding: 5px;
-    /* overflow: hidden; */
   }
   
   .card__content {
@@ -484,7 +331,6 @@ section .text-container .text-box{
     position: relative;
     padding: 15em 5em;
     transition: transform 2s;
-    /* background: pink; */
     transform-style: preserve-3d;
   }
   
@@ -506,12 +352,6 @@ section .text-container .text-box{
     display: grid;
     align-content: center;
   }
-  
-  /* .card__front__pic1,.card__front__pic2,.card__front__pic3 {
-    background-color:#2759a9;
-    color: rgb(255, 255, 255);
-  } */
-  
   .card__front__pic1::before,.card__front__pic2::before,.card__front__pic3::before {
     content: '';
     position: absolute;
@@ -573,8 +413,6 @@ section .text-container .text-box{
     color: rgb(255, 255, 255);
   }
   .card__front__pic3{
-    /* background-image: url(Business\ candle\ stick\ graph\ chart\ of\ stock\ market\ investment\ trading____.jfif); */
-    /* background-image: url(ethereum-1.jpeg); */
     background-image: url(csm_deep-learning-vs-machine-learning-t_8d403d65ff.jpg);
     background-size: cover;
     background-blend-mode: overlay;
@@ -582,8 +420,6 @@ section .text-container .text-box{
     background-color:#2759a9;
     color: rgb(255, 255, 255);
   }
-
-
   .contact-container{
     box-sizing: border-box;
     position: relative;
@@ -594,19 +430,6 @@ section .text-container .text-box{
     align-items: center;
     padding: 20px 100px;
   }
-  
-  .contact-container:after{
-    /* content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: url("img/bg.jpg") no-repeat center;
-    background-size: cover;
-    filter: blur(50px);
-    z-index: -1; */
-  }
   .contact-box{
   box-sizing: border-box;
     max-width: 850px;
@@ -614,7 +437,8 @@ section .text-container .text-box{
     align-items: center;
     text-align: center;
     background-color: #252525;
-    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+    box-shadow: 0px 0px 8px #fff;
+    border-radius: 5px;
   }
   
   .right{
@@ -654,6 +478,9 @@ section .text-container .text-box{
   
   .field:hover{
     background-color: rgba(0, 0, 0, 0.1);
+  }
+  .field:focus{
+    box-shadow: 0 0 12px #00adf2;
   }
   
   textarea{
@@ -752,7 +579,7 @@ section .text-container .text-box{
   font-family: "roboto",sans-serif;
   font-size: 1rem;
   font-weight: 200;
-  bottom: 0;
+  bottom: 0px;
   color: #fff;
   text-align: center;
   }
